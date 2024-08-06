@@ -1,0 +1,17 @@
+<div *ngIf="display && id != 0">
+    <div class="pct-display">
+        <div class="pct-container">
+            <div class="pct-img-container">
+                <img [src]='picture.path' alt="img" class="pct-img">
+            </div>
+            <div class="pct-info">
+                <h3>Author: {{picture.author}}</h3>
+                <h4>Name: {{picture.name}}</h4>
+                <h4>Year: {{picture.year | date:'yyyy' : 'UTC'}}</h4>
+                <h4>Width: {{picture.width}}</h4>
+                <h4>Height: {{picture.height}}</h4>
+            </div>
+            <h2>Location: {{picture.location}}</h2>
+        </div>
+    </div>
+</div>

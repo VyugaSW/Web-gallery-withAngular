@@ -1,0 +1,33 @@
+.pct-sub-container{
+    width: 100%;
+    z-index: 2;
+}
+
+.pct-display{
+    width: 90%;
+    border: 1px solid black;
+    padding: 0.5rem;
+    background-color: beige;
+}
+
+.pct-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.pct-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: start;
+    justify-content: center;
+}
+
+.pct-img-container{
+    width: 10rem;
+    height: 10rem;
+}
+
+.pct-img{
+    width: 100%;
+}

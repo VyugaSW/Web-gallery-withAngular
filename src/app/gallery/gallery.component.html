@@ -1,0 +1,15 @@
+<div *ngIf="clicked.display" class="bg-pct-display" (click)="displayPicture(clicked.id)"></div>
+<div class="container">
+    <div *ngFor="let picture of pictures" class="pct-block" (click)="displayPicture(picture.id)">
+        <img [src]="picture.path" alt="img">
+    </div>
+</div>
+<div class="pct" *ngIf="clicked.display">
+    <app-picture  [id]="clicked.id" [display]="clicked.display"></app-picture>
+    <h3 class="another-works">Another author's works:</h3>
+    <div class="another-pcts">
+        <div *ngFor="let picture of displayPicturesByAuthor()" class="another-pct-block" (click)="displayPicture(picture.id, false)">
+            <img [src]="picture.path" alt="img">
+        </div>
+    </div>
+</div>
